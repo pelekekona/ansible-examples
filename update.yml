@@ -1,0 +1,17 @@
+---
+- name: Update packages on Ubuntu hosts
+  hosts: all
+  become: true
+  become_user: non_privileged_user
+  gather_facts: false
+
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade packages
+      apt:
+        upgrade: dist
+        autoremove: yes
+        autoclean: yes
