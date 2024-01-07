@@ -1,4 +1,5 @@
 - name: Update packages on Ubuntu host
+  hosts: all
   become: false
   gather_facts: false
 
