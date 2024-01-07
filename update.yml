@@ -1,13 +1,20 @@
----
-- name: Update and upgrade apt packages
-  hosts: all 
-  become: true
+- name: Update packages on Ubuntu host
+  become: false
+  gather_facts: false
+
   tasks:
-    - name: Update packages with apt
+    - name: Update package cache
       apt:
         update_cache: yes
-     
-    - name: Upgrade packages with apt
+      become: true
+      become_user: root
+
+    - name: Upgrade packages
       apt:
         upgrade: dist
+        autoremove: yes
+        autoclean: yes
+      become: true
+      become_user: root
+
 
