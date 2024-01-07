@@ -1,5 +1,5 @@
 - name: Update packages on Ubuntu host
-    hosts: your_host
+    hosts: all
     become: true
     become_user: root
     gather_facts: false
