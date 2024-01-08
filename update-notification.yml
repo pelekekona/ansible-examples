@@ -18,4 +18,4 @@
       community.general.discord:
         webhook_id: "1194033882794823761"
         webhook_token: "LSXLk6I9f2gAJzRSllboKfqoLBaB7YwTeFXjdVEmTLt2lcx8W1XknKYKiQutQFDo96GO"
-        content: "Software update complete."
+        content: "Software update complete on {{ ansible_hostname }}."
