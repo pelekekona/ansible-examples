@@ -1,7 +1,7 @@
 ---
 - name: Update packages on Ubuntu hosts
   hosts: all
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - name: Update package cache
