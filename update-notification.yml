@@ -17,5 +17,5 @@
     - name: Send a message to the Discord channel
       community.general.discord:
         webhook_id: "1194033882794823761"
-        webhook_token: "LSXLk6I9f2gAJzRSllboKfqoLBaB7YwTeFXjdVEmTLt2lcx8W1XknKYKiQutQFDo96GOY"
+        webhook_token: "LSXLk6I9f2gAJzRSllboKfqoLBaB7YwTeFXjdVEmTLt2lcx8W1XknKYKiQutQFDo96GO"
         content: "Software update complete."
